@@ -1,3 +1,12 @@
+function login(){
+  const inputPassword = document.getElementById("inpt1").value;
+  const password = "Admin@leonard25";
+  if (inputPassword === password) {
+    window.location.href = "index2.html";
+  } else {
+    alert("Password Is not Correct!!")
+  }
+}
 function isDesktopOrTabletButNotAndroid() {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   const isAndroid = /Android/i.test(userAgent);
@@ -11,13 +20,4 @@ if (isDesktopOrTabletButNotAndroid()) {
   alert("Desktop Detected!")
 } else {
   console.log("Device is Android or mobile.");
-};
-function login(){
-  const inputPassword = document.getElementById("inpt1").value;
-  const password = "Admin@leonard25";
-  if (inputPassword === password) {
-    window.location.href = "index2.html";
-  } else {
-    alert("Password Is not Correct!!")
-  }
 }
