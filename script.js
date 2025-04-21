@@ -1,10 +1,11 @@
 function login(){
   const inputPassword = document.getElementById("inpt1").value;
-  const password = "Admin@leonard25";
+  const password = "admin@leonard25";
   if (inputPassword === password) {
-    window.location.href = "index2.html";
+    sessionStorage.setItem("loginSDK", "true");
+    window.location.href = "index_access.html";
   } else {
-    alert("Password Is not Correct!!")
+    alert("Incorrect Password!!")
   }
 }
 function isDesktopOrTabletButNotAndroid() {
