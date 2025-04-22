@@ -1,6 +1,6 @@
 function login(){
   const inputPassword = document.getElementById("inpt1").value;
-  const password = "admin@leonard25";
+  const password = "";
   if (inputPassword === password) {
     sessionStorage.setItem("loginSDK", "true");
     window.location.href = "index_access.html";
